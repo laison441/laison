@@ -1,5 +1,374 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SF Pro Display', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .jumbotron {
+            background-color: #282828;
+            color: #ffffff;
+        }
+        .content-section {
+            padding: 40px 0;
+        }
+        .footer {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .game-card {
+            background-color: #333333;
+            border: none;
+        }
+        .game-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .game-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Gaming Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#most-played">Most Played</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#popular">Popular</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#upcoming">Upcoming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#latest">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#first-game">First Ever Game</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kids-games">Games for Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#adults-games">Games for Adults</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#game-companies">Best Game Companies</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-   
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to Gaming Hub</h1>
+            <p class="lead">Your ultimate destination for all things gaming</p>
+        </div>
+    </header>
+
+    <!-- Most Played Games Section -->
+    <section id="most-played" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Most Played Games</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/aa/GTA_V_Box_Art.jpg" class="card-img-top" alt="GTA V">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Grand Theft Auto V</h5>
+                            <p class="card-text">Grand Theft Auto V is an action-adventure game developed by Rockstar North and published by Rockstar Games. It is one of the best-selling games of all time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Fortnite_2017.jpg" class="card-img-top" alt="Fortnite">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Fortnite</h5>
+                            <p class="card-text">Fortnite is a battle royale game developed by Epic Games. It has gained massive popularity for its engaging gameplay and frequent updates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/8d/League_of_Legends_logo.jpg" class="card-img-top" alt="League of Legends">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">League of Legends</h5>
+                            <p class="card-text">League of Legends is a multiplayer online battle arena game developed and published by Riot Games. It has a large competitive scene and a massive player base.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Games Section -->
+    <section id="popular" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Popular Games</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" class="card-img-top" alt="The Legend of Zelda: Breath of the Wild">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">The Legend of Zelda: Breath of the Wild</h5>
+                            <p class="card-text">The Legend of Zelda: Breath of the Wild is an action-adventure game developed and published by Nintendo. It is acclaimed for its open-world gameplay and intricate design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/e/e8/Animal_Crossing_New_Horizons.jpg" class="card-img-top" alt="Animal Crossing: New Horizons">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Animal Crossing: New Horizons</h5>
+                            <p class="card-text">Animal Crossing: New Horizons is a life simulation game developed and published by Nintendo. It offers a relaxing gameplay experience where players can build and customize their own island.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Cyberpunk_2077_box_art.jpg" class="card-img-top" alt="Cyberpunk 2077">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Cyberpunk 2077</h5>
+                            <p class="card-text">Cyberpunk 2077 is an open-world, action-adventure RPG developed and published by CD Projekt. Despite its rocky launch, it remains a popular title for its immersive world and deep storytelling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Games Section -->
+    <section id="upcoming" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Upcoming Games</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/94/Elden_Ring_Box_art.jpg" class="card-img-top" alt="Elden Ring">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Elden Ring</h5>
+                            <p class="card-text">Elden Ring is an upcoming action RPG developed by FromSoftware and published by Bandai Namco Entertainment. It features a collaboration with George R. R. Martin for its narrative.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Horizon_Forbidden_West_cover_art.jpg" class="card-img-top" alt="Horizon Forbidden West">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Horizon Forbidden West</h5>
+                            <p class="card-text">Horizon Forbidden West is an upcoming action RPG developed by Guerrilla Games and published by Sony Interactive Entertainment. It continues the story of Aloy as she explores new frontiers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/Hogwarts_Legacy_cover.jpg" class="card-img-top" alt="Hogwarts Legacy">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Hogwarts Legacy</h5>
+                            <p class="card-text">Hogwarts Legacy is an upcoming action RPG set in the Harry Potter universe. Developed by Portkey Games, it allows players to explore the magical world and attend Hogwarts School of Witchcraft and Wizardry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Games Section -->
+    <section id="latest" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Latest Games</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/33/Resident_Evil_Village.png" class="card-img-top" alt="Resident Evil Village">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Resident Evil Village</h5>
+                            <p class="card-text">Resident Evil Village is a survival horror game developed and published by Capcom. It continues the story of Ethan Winters as he faces new horrors in a mysterious village.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Halo_Infinite_cover_art.png" class="card-img-top" alt="Halo Infinite">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Halo Infinite</h5>
+                            <p class="card-text">Halo Infinite is a first-person shooter game developed by 343 Industries and published by Xbox Game Studios. It is the latest entry in the acclaimed Halo series and features an open-world campaign.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/27/Deathloop_cover_art.jpg" class="card-img-top" alt="Deathloop">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Deathloop</h5>
+                            <p class="card-text">Deathloop is an action-adventure game developed by Arkane Studios and published by Bethesda Softworks. The game features a time loop mechanic and a unique art style.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Ever Game Section -->
+    <section id="first-game" class="content-section">
+        <div class="container">
+            <h2 class="text-center">First Ever Game</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Pong_game.jpg" class="card-img-top" alt="Pong">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Pong</h5>
+                            <p class="card-text">Pong, released in 1972 by Atari, is one of the earliest arcade video games. It simulates table tennis and was one of the first video games to gain widespread popularity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games for Kids Section -->
+    <section id="kids-games" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Games for Kids</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Minecraft_cover.png" class="card-img-top" alt="Minecraft">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Minecraft</h5>
+                            <p class="card-text">Minecraft is a sandbox game developed by Mojang Studios. It allows players to build and explore virtual worlds made of blocks, fostering creativity and imagination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/aa/Super_Mario_Odyssey.jpg" class="card-img-top" alt="Super Mario Odyssey">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Super Mario Odyssey</h5>
+                            <p class="card-text">Super Mario Odyssey is a platform game developed and published by Nintendo. It follows Mario as he travels across various worlds to rescue Princess Peach from Bowser.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/45/LEGO_Harry_Potter_Years_1-4_cover.jpg" class="card-img-top" alt="LEGO Harry Potter">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">LEGO Harry Potter</h5>
+                            <p class="card-text">LEGO Harry Potter is a series of adventure games developed by Traveller's Tales and published by Warner Bros. Interactive Entertainment. It combines LEGO building and the magical world of Harry Potter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games for Adults Section -->
+    <section id="adults-games" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Games for Adults</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/82/The_Witcher_3_Wild_Hunt_cover.jpg" class="card-img-top" alt="The Witcher 3: Wild Hunt">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">The Witcher 3: Wild Hunt</h5>
+                            <p class="card-text">The Witcher 3: Wild Hunt is an action RPG developed by CD Projekt. It is known for its rich storytelling, immersive world, and complex characters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/58/Red_Dead_Redemption_II.jpg" class="card-img-top" alt="Red Dead Redemption 2">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Red Dead Redemption 2</h5>
+                            <p class="card-text">Red Dead Redemption 2 is an action-adventure game developed and published by Rockstar Games. It is acclaimed for its detailed world, engaging storyline, and realistic graphics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Dark_Souls_Cover_Art.jpg" class="card-img-top" alt="Dark Souls">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Dark Souls</h5>
+                            <p class="card-text">Dark Souls is an action RPG developed by FromSoftware. It is known for its challenging gameplay, intricate level design, and deep lore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Game Companies Section -->
+    <section id="game-companies" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Best Game Companies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Nintendo.svg" class="card-img-top" alt="Nintendo">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Nintendo</h5>
+                            <p class="card-text">Nintendo is a Japanese video game company known for creating some of the most iconic game franchises, including Mario, The Legend of Zelda, and Pokémon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Sony_Interactive_Entertainment_logo.svg" class="card-img-top" alt="Sony Interactive Entertainment">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Sony Interactive Entertainment</h5>
+                            <p class="card-text">Sony Interactive Entertainment is a subsidiary of Sony Corporation, responsible for the PlayStation brand. It has developed many successful game series, including Uncharted, The Last of Us, and God of War.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card game-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Rockstar_Games_Logo.svg" class="card-img-top" alt="Rockstar Games">
+                        <div class="card-body">
+                            <h5 class="card-title game-card-title">Rockstar Games</h5>
+                            <p class="card-text">Rockstar Games is an American video game publisher known for creating critically acclaimed games such as Grand Theft Auto, Red Dead Redemption, and Bully.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
